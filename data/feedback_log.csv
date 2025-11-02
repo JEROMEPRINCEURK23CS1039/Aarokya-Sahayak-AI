@@ -1,0 +1,8 @@
+ts,method,age,gender,symptoms,top_disease,top_prob,triage,state,district
+2025-11-02T20:17:21.907Z,XGBoost Classifier,20,Male,Fever,Influenza,0.20233874022960663,HomeCare,,
+2025-11-02T20:23:55.329Z,XGBoost Classifier,20,Male,Fever,Influenza,0.20233874022960663,HomeCare,,
+2025-11-02T20:24:13.359Z,XGBoost Classifier,20,Male,Fever|Runny Nose|Sneezing,Common Cold,0.9966895580291748,Urgent,,
+2025-11-02T20:28:52.000Z,XGBoost Classifier,20,Male,Diarrhea|Dizziness|Vomiting,Influenza,0.20233874022960663,HomeCare,,
+2025-11-02T20:34:07.535Z,XGBoost Classifier,40,Male,Body Ache|Breathlessness|Chest Pain|Fatigue,Heart Attack,0.9973127245903015,Emergency,,
+2025-11-02T20:46:09.432Z,XGBoost Classifier,20,Male,Abdominal Pain|Fever|Headache,Food Poisoning,0.9970341920852661,Urgent,,
+2025-11-02T20:54:11.726Z,XGBoost Classifier,40,Male,Blurred Vision|Body Ache,Migraine,0.996705949306488,Urgent,,

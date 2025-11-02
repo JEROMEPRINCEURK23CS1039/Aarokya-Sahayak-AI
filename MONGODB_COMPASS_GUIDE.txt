@@ -1,0 +1,158 @@
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║        MONGODB COMPASS - QUICK CONNECTION GUIDE               ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+
+✅ STATUS CHECK
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ✓ MongoDB Service: RUNNING (Port 27017)
+  ✓ Backend Server: CONNECTED
+  ✓ Database Name: aarogya-sahayak
+
+
+📋 CONNECTION STEPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. OPEN MONGODB COMPASS
+   └─ Look at the welcome screen
+
+2. CLICK "Add new connection"
+   └─ Green button on the left panel
+
+3. ENTER CONNECTION STRING:
+   
+   ┌────────────────────────────────────────┐
+   │ mongodb://localhost:27017              │
+   └────────────────────────────────────────┘
+   
+   OR
+   
+   ┌────────────────────────────────────────┐
+   │ mongodb://127.0.0.1:27017              │
+   └────────────────────────────────────────┘
+
+4. CLICK "Save & Connect"
+
+5. WAIT FOR CONNECTION (takes 2-3 seconds)
+
+6. LOOK FOR YOUR DATABASE:
+   └─ aarogya-sahayak
+
+
+🗂️ DATABASE STRUCTURE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+After connecting, you should see:
+
+📁 aarogya-sahayak (Database)
+  │
+  ├─ 📄 users
+  │   └─ Contains: User accounts (email, name, profile)
+  │
+  ├─ 📄 analyses  
+  │   └─ Contains: Health analyses (symptoms, predictions, triage)
+  │
+  ├─ 📄 hospitals
+  │   └─ Contains: Hospital information (name, location, services)
+  │
+  ├─ 📄 symptoms
+  │   └─ Contains: List of available symptoms
+  │
+  └─ 📄 outbreaks
+      └─ Contains: Disease outbreak data
+
+
+🔍 HOW TO VIEW DATA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Click on "aarogya-sahayak" database
+2. Click on any collection (e.g., "analyses")
+3. You'll see all documents in that collection
+
+
+🚨 TROUBLESHOOTING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PROBLEM: "Cannot connect to MongoDB"
+SOLUTION:
+  ✓ Check MongoDB service is running:
+    - Open Services (Win + R, type "services.msc")
+    - Look for "MongoDB Server"
+    - Status should be "Running"
+
+PROBLEM: "Database not visible"
+SOLUTION:
+  ✓ Click the "Databases" tab at the top
+  ✓ Click the refresh icon (↻)
+  ✓ Try performing an analysis in the app first to create data
+
+PROBLEM: "Connection timeout"
+SOLUTION:
+  ✓ Try connection string: mongodb://127.0.0.1:27017
+  ✓ Check if port 27017 is open
+  ✓ Restart MongoDB Compass
+
+
+💡 TESTING YOUR CONNECTION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Open your web app: http://localhost:5174
+2. Sign up or log in
+3. Perform a symptom analysis
+4. Go to MongoDB Compass
+5. Refresh the "analyses" collection
+6. You should see your new analysis document!
+
+
+📞 CONNECTION STRINGS REFERENCE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Basic Connection (Recommended):
+  mongodb://localhost:27017
+
+With Database Name:
+  mongodb://localhost:27017/aarogya-sahayak
+
+Using IP Address:
+  mongodb://127.0.0.1:27017
+
+With Options:
+  mongodb://localhost:27017/?directConnection=true
+
+
+🎯 WHAT TO SEE IN COMPASS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LEFT PANEL:
+  └─ Connections
+      └─ localhost:27017
+          └─ Databases (click to expand)
+              └─ aarogya-sahayak (your database)
+
+MAIN AREA:
+  └─ Collections list
+  └─ Documents view
+  └─ Query tools
+
+
+✨ QUICK TIPS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• You can favorite the connection for quick access
+• Use the filter bar to search documents
+• Click on a document to view details
+• Use "Explain Plan" to optimize queries
+• Export data as JSON or CSV
+
+
+═══════════════════════════════════════════════════════════════
+
+If you still don't see your database after connecting:
+
+1. Make sure your backend server is running (npm run dev in server folder)
+2. Create some data by using the app (sign up, analyze symptoms)
+3. Refresh MongoDB Compass
+4. The database appears automatically when data is first saved
+
+═══════════════════════════════════════════════════════════════

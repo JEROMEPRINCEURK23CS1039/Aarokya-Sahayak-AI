@@ -1,0 +1,4 @@
+ts,useful,reason,state,district,method,age,gender,symptoms,top_disease,top_prob,triage
+2025-10-01T20:20:44,1,,Odisha (ଓଡ଼ିଶା),Bhubaneswar (ଭୁବନେଶ୍ୱର),AI Machine Learning Model,30,Male,cough|fever,Influenza,0.9973127245903015,Urgent
+2025-10-01T20:21:30,1,,Odisha (ଓଡ଼ିଶା),Cuttack (କଟକ),AI Machine Learning Model,30,Male,cough|runny nose,Influenza,0.5512093901634216,Home Care
+2025-10-01T20:25:24,0,,Odisha (ଓଡ଼ିଶା),Cuttack (କଟକ),AI Machine Learning Model,30,Male,cough|runny nose,Influenza,0.5512093901634216,Home Care
