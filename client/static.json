@@ -1,0 +1,14 @@
+{
+  "routes": [
+    {
+      "type": "proxy",
+      "source": "/api/(.*)",
+      "destination": "https://YOUR-RENDER-BACKEND-URL/api/$1"
+    },
+    {
+      "type": "rewrite",
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
