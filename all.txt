@@ -1,0 +1,6 @@
+passwordmango = Fi1EwHtqAOnXr1D8
+user = jeromeprince_db_user
+mongodb+srv://jeromeprince_db_user:Fi1EwHtqAOnXr1D8@cluster0.ylkl4e9.mongodb.net/?appName=Cluster0
+JWT_SECRET=b82ddcda623c772ec02b66c54644514e7111c99722662414359f1690dda2acef63f4e7db4dc0ef64327a14dda6b9e0a6a8c2f2c9882e3c38572de2839e284389
+frontend= https://aarokya-sahayak-aiup.onrender.com
+ML_SERVICE_URL= https://aarogya-ml-service.onrender.com

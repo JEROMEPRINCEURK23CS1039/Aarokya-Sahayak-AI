@@ -19,6 +19,8 @@ Follow these steps to deploy each piece and connect them together.
    `mongodb+srv://<user>:<password>@<cluster>.mongodb.net/aarogya-sahayak?retryWrites=true&w=majority`
 4. You will use this URI as `MONGO_URI` in the backend environment.
 
+**Security note:** Never commit your database credentials to the repo. Store them only in your hosting provider's Environment Variables.
+
 Required Backend env vars:
 
 - `MONGO_URI` → Atlas URI
